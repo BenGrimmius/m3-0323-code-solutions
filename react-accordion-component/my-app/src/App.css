@@ -6,7 +6,23 @@
   align-items: center;
 }
 
-.topic-wrapper {
+.wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(141 139 139);
+  padding: 0 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  background-color: rgb(188 188 188);
+  margin: 0;
+  padding: 0 10px;
   width: 500px;
 }
 
@@ -14,12 +30,11 @@
   display: none;
 }
 
-h1 {
-  background-color: rgb(193 193 193);
-  padding: 5px;
-}
-
 ul {
   list-style-type: none;
   width: 500px;
+}
+
+li {
+  margin-bottom: 5px;
 }

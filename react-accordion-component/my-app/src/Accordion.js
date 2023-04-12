@@ -15,7 +15,10 @@ export default function Accordion({ topics }) {
     <>
       {topics.map(topic => (
         <li key={topic.id} >
-          <h1 onClick={() => handleClick(topic.id)}>{ topic.name }</h1>
+          <div className='wrapper' onClick={() => handleClick(topic.id)}>
+            <h1 >{ topic.name }</h1>
+            <div>{activeIndex === topic.id ? '-' : '+'}</div>
+          </div>
           <p className={activeIndex === topic.id ? '' : 'inactive'}>{topic.description}</p>
         </li>
       ))}
