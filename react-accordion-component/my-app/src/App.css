@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic-wrapper {
+  width: 500px;
+}
+
+.inactive {
+  display: none;
+}
+
+h1 {
+  background-color: rgb(193 193 193);
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  width: 500px;
+}
