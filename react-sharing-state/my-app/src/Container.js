@@ -18,19 +18,6 @@ export default function Container({ items }) {
     setCurrent((current + 1) % items.length)
   }
 
-  // function handleSelect() {
-  //   for (let i = 0; i < items.length; i++) {
-  //     console.log('var i', i);
-  //     console.log('items', items);
-  //     console.log('items at i', items[i])
-  //     if (i === items[i]) {
-  //       console.log('good')
-  //     } else {
-  //       console.log('try again')
-  //     }
-  //   }
-  // }
-
   function retrieveI(i) {
     setCurrent(i)
   }
