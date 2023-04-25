@@ -7,7 +7,7 @@ import pikachuPhoto from './images/025.png';
 import jigglypuffPhoto from './images/039.png';
 
 const pokemonList = [
-  { number: '001', name: 'Bulbasaur', src: bulbasaurPhoto, logo: 'https://image.pngaaa.com/548/362548-small.png'},
+  { number: '001', name: 'Bulbasaur', src: bulbasaurPhoto},
   {number: '004', name: 'Charmander', src: charmanderPhoto},
   {number: '007', name: 'Squirtle', src: squirtlePhoto},
   {number: '025', name: 'Pikachu', src: pikachuPhoto},
