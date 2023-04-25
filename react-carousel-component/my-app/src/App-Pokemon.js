@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
 import { FaRegCircle } from 'react-icons/fa';
@@ -7,6 +8,13 @@ import { FaCircle } from 'react-icons/fa'
 
 export default function Container({ items }) {
   let [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((current + 1) % items.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [current, items.length])
 
   function HandleChevLeft() {
     setCurrent((current - 1 + items.length) % items.length)
