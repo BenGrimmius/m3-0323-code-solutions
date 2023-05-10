@@ -27,7 +27,6 @@ export default function Todos() {
 
   /* Implement addTodo to add a new todo. Hints are at the bottom of the file. */
   async function addTodo(newTodo) {
-    console.log('New Todo: ', newTodo);
     const req = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
